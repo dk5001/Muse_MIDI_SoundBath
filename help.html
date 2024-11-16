@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Doc</title>
+</head>
+
+<body>
+
+    <h1>Getting Started</h1>
+
+    <section>
+        <h2>Connecting Your Browser to Ableton</h2>
+        <p><a href="https://help.ableton.com/hc/en-us/articles/209774225-Setting-up-a-virtual-MIDI-bus"
+                target="_blank">Follow these instructions</a> to connect your browser to Ableton (or another DAW).</p>
+        <p>You must use Chrome or <a href="https://caniuse.com/web-bluetooth" target="_blank">another browser</a> that
+            has Web Bluetooth.</p>
+
+        <h2>MIDI Mapping in Ableton</h2>
+        <p><a href="https://help.ableton.com/hc/en-us/articles/360000038859-Making-custom-MIDI-Mappings"
+                target="_blank">Follow these instructions</a> to map the brainwave MIDI CC's to music parameters inside
+            Ableton. Instead of turning a knob on a MIDI controller, you'll press the "Map" button next to a State. That
+            will send a single MIDI CC command over to Ableton, which can receive it if it's in MIDI Map Mode.</p>
+        <p>IMPORTANT: If the Muse headset is connected and streaming data, it's nearly impossible to do MIDI mapping
+            because Ableton will be trying to map several MIDI CC streams simultaneously. It's much easier to do if the
+            headband is off and you press the Map buttons.</p>
+
+        <h2>Connecting to the Muse headset</h2>
+        <ol>
+            <li>Turn on the Muse headset</li>
+            <li>Open the <a href="index.html">creator tool</a> in your browser</li>
+            <li>Press the "Connect" button. A Web Bluetooth window will open.</li>
+            <li>Wait for your Muse to show up in the window. Select it and click "Pair."</li>
+        </ol>
+        <p>Your brainwave (and with the Muse 2, your heartbeat) data will start to stream in. The numbers in the grey
+            box will change and you'll see a white line showing your brainwave frequency spectrum, ranging from Delta on
+            the left to Gamma on the right.</p>
+    </section>
+    <hr>
+    <section>
+        <h2>EEG Streaming Data</h2>
+        <p>The incoming data stream from the EEG headset is analyzed by ML5 (machine learning) and assessed. The
+            incoming signal could be determined to be:</p>
+        <h3>Noise</h3>
+        <p>This is when the headband is not on someone's head, or the connection is loose. I usually use this MIDI CC to
+            pull down the volumes of the sounds so the atmospheric electricity isn't sonified. I only want to have music
+            output when someone has the headset on with a good fit.</p>
+        <h3>Muscle Tension</h3>
+        <p>This category includes tension in the forehead, jaw clenches, eye blinks. The Muse headset can acts as an EMG
+            (electromyography = muscle) as well as an EEG, and the biometric data of a person's muscle tension can be
+            turned into a sound.</p>
+        <h3>Relaxed focus</h3>
+        <p>This is a new training via ML. I've found this state activates when my face is still and I'm reading or
+            focusing on something, like reading text on my computer screen.</p>
+        <h3>Clear mind</h3>
+        <p>When I unfocus my eyes and blank out my mind, all the electrical activity of all the brainwaves drops, and
+            this state is detected.</p>
+        <h3>Meditative mind</h3>
+        <p>The Muse headset is particularly good at detecting elevated alpha, which usually indicates the eyes are
+            closed and the mind is becoming quiet.</p>
+        <h3>Dreaming</h3>
+        <p>If very tired, or meditating long enough that you start to have dream flashes, this state activates.</p>
+
+        <h3>Dominant State</h3>
+        <p>The state that the ML determines is the dominant state will have an arrow pointing at it. For example:</p>
+        <p> > CLEAR</p>
+
+        <h3>Biometric Data</h3>
+        <p>Below the ML states are readouts of the 5 brainwaves, your heart BPM (if you're using the Muse 2 or later) and accelerometer / movement data.</p>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>MIDI CC Controls</h2>
+        <p>Each state has a stream toggle and a test button.</p>
+
+        <h3>Stream toggle</h3>
+        <p>When the headset is connected, these checkbox toggles turn the stream of MIDI CC values on and off for each
+            state.</p>
+        <h3>Test button</h3>
+        <p>Used for MIDI mapping (see above).</p>
+    </section>
+
+
+</body>
+
+</html>

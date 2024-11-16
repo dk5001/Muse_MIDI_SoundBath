@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+ul {
+    list-style: none; /* Hide bullets */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1px;
+    margin-top:1px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+
+}
+#help {
+  padding: 10px;
+  position: fixed;
+  text-align: left;
+  bottom: 10px;
+}

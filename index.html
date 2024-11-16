@@ -1,0 +1,145 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="p5.js"></script>
+  <script src="ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="300">
+        <h3>EEG Streaming Data</h3>
+        <main></main>
+      </td>
+      <td width = "100">
+        <h3>MIDI CC Controls</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>Stream</th>
+              <th>MIDI Mapping</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Device noise</td>
+              <td>
+                <input type="checkbox" id="state-0" class="state-checkbox" checked />
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(0)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Muscle tension</td>
+              <td>
+                <input type="checkbox" id="state-1" class="state-checkbox" checked />
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(1)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Active mind</td>
+              <td>
+                <input type="checkbox" id="state-2" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(2)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Clear mind</td>
+              <td>
+                <input type="checkbox" id="state-3" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(3)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Alpha meditation</td>
+              <td>
+                <input type="checkbox" id="state-4" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(4)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Theta dream</td>
+              <td>
+                <input type="checkbox" id="state-5" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(5)">Map</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Head movement</td>
+              <td>
+                <input type="checkbox" id="state-6" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(6)">Map</button>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>HRV</td>
+              <td>
+                <input type="checkbox" id="state-7" class="state-checkbox" checked />
+
+              </td>
+              <td>
+                <button class="test-midi-button" onclick="testMidiButtonClicked(7)">Map</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+<a id="help" href="help.html">Help documentation</a>
+
+
+  <script src="muse/utils-json.js"></script>
+  <script src="muse/muse.js"></script>
+  <script src="muse/fft.js"></script>
+  <script src="muse/museDataBuffer.js"></script>
+  <script src="muse/museEEG.js"></script>
+  <script src="muse/musePPG.js"></script>
+  <script src="muse/museParser.js"></script>
+  <script src="muse/museListeners.js"></script>
+  <script src="muse/museSetup.js"></script>
+  <script src="muse/museBluetooth.js"></script>
+  <script src="muse/webBLE.js"></script>
+  <script src="muse/museML.js"></script>
+
+  <script src="DMX/DmxLightModelLitake.js"></script>
+  <script src="DMX/dmxManager.js"></script>
+  <script src="MIDI/webmidi.js"></script>
+  <script src="MIDI/midiManager.js"></script>
+
+  
+
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>
